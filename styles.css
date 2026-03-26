@@ -1,0 +1,7 @@
+body { transition: background 0.3s, color 0.3s; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); padding: 1rem; }
+body.light { background: linear-gradient(135deg, #fefefe, #e0e0e0); color: #1f1f1f; }
+body.light .glass { background: rgba(255,255,255,0.6); border-color: rgba(0,0,0,0.1); }
+body.dark { background: linear-gradient(135deg, #1e1e2f, #2c2c3e); color: #ddd; }
+body.dark .glass { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
+button { cursor: pointer; margin:2px; }

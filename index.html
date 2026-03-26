@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تطبيق رمضان - النمر للمعلوميات</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+<div class="max-w-4xl w-full space-y-6">
+  <header class="glass p-4 rounded-2xl flex justify-between items-center mb-6">
+    <div>
+      <h1 class="text-2xl font-bold text-amber-400">🌙 تطبيق رمضان</h1>
+      <p class="text-sm text-gray-400">عداد الإفطار والسحور | مسبحة | تقويم رمضان</p>
+    </div>
+    <button id="toggleTheme" class="bg-amber-400 text-slate-900 px-3 py-1 rounded-xl text-sm">تبديل الوضع</button>
+  </header>
+
+  <!-- أقسام التطبيق (الوقت، العدادات، المسبحة، حكم يومية، تقويم) -->
+  <div class="glass p-4 rounded-2xl">
+    <h2>الوقت الآن</h2>
+    <div id="nowTime">جارٍ التحميل...</div>
+    <p id="locationName">الموقع: القاهرة (افتراضي)</p>
+  </div>
+
+  <div class="glass p-4 rounded-2xl">
+    <h2>عدّاد الإفطار</h2>
+    <div id="countdownIftar"></div>
+  </div>
+
+  <div class="glass p-4 rounded-2xl">
+    <h2>عدّاد السحور</h2>
+    <div id="countdownSuhoor"></div>
+  </div>
+
+  <div class="glass p-4 rounded-2xl">
+    <h2>مسبحة رمضان</h2>
+    <div>
+      <div id="counter">0</div>
+      <button id="inc">+1</button>
+      <button id="reset">إعادة</button>
+    </div>
+  </div>
+
+  <div class="glass p-4 rounded-2xl">
+    <h2>آية / حكمة يومية</h2>
+    <div id="daily">جارٍ التحميل...</div>
+    <button id="newQuote">جديد</button>
+    <button id="shareQuote">نسخ</button>
+  </div>
+
+  <div class="glass p-4 rounded-2xl md:col-span-2">
+    <h2>تقويم رمضان (30 يوم)</h2>
+    <div id="calendar" class="grid grid-cols-7 gap-2 text-center text-sm"></div>
+  </div>
+
+  <div class="glass p-4 rounded-2xl">
+    <h2>عن التطبيق</h2>
+    <p>تطبيق رمضان – النمر للمعلوميات هو تطبيق تفاعلي لمتابعة أوقات الصيام والعبادات في شهر رمضان المبارك. يدعم الوضع الفاتح والداكن، ويعمل على الكمبيوتر والموبايل مباشرة.</p>
+  </div>
+
+  <footer class="text-center text-gray-400 text-sm">
+    رمضان كريم 🌙 — تم التصميم بواسطة: <strong>النمر للمعلوميات</strong>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
